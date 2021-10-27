@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
   public faCommentDots =  faCommentDots
   public faSearch = faSearch
 
+  public sidebarView = false;
+
   constructor() { }
 
   ngOnInit(): void {

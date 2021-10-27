@@ -1,8 +1,11 @@
 <header class="header">
   <div class="container-fluid">
     <div class="row align-items-center">
+      
       <div class="col-3 d-flex align-items-center justify-content-start">
-        <fa-icon [icon]="faBars" [styles]="{'color': '#6d5cb3', 'margin-left':'25px'}" ></fa-icon>
+        <button  (click)="sidebarView = !sidebarView" class="btn" [ngStyle]="{'margin-left':'25px'}">
+          <fa-icon [icon]="faBars" [styles]="{'color': '#6d5cb3'}" ></fa-icon>
+        </button>
         <h4 class="mb-0" [ngStyle]="{'margin-left': '8px'}">Hello Jhey</h4>
       </div>
       <div class="col-4">
@@ -47,3 +50,5 @@
     </div>
   </div>
 </header>
+
+<app-sidebar [view]="sidebarView"></app-sidebar>
