@@ -1,0 +1,81 @@
+.header {
+  padding: 15px;
+  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.08);
+}
+
+.header h4 {
+  font-weight: 700;
+  color: #676768;
+}
+
+/* Input Search */
+.input-search label {
+  color: #9fa1a3;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.input-search input{
+  background-color: #eceff6;
+  outline: none;
+  transition: 0.3s all;
+}
+
+/* FIXME cuando se deja el focus vuelve el label search here */
+.input-search input:focus + .label-search ,
+.input-search input:active + .label-search
+{
+  display: none;
+}
+
+.input-search input:focus{
+  box-shadow: none;
+  border: 1px solid #9781f0f1;
+  transition: 0.3s all;
+}
+
+.input-search input:active{
+  border: 1px solid #9781f0f1;
+  transition: 0.3s all;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+
+}
+
+ul li {
+  display: inline;
+  padding: 8px;
+  margin: 0px 5px;
+  background-color: #dfd7ff5d;
+  border-radius: 3px;
+}
+
+li:last-child{
+  margin-right: 25px !important;
+}
+
+/* Actions buttons */
+.actions-header {
+  margin: 0 2px;
+}
+
+.actions-header button {
+  background-color: #ff5538;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Profile Info */
+.avatar {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.avatar img {
+  border-radius: 10px;
+  width: 45px;
+  height: auto;
+}

@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-3 d-flex align-items-center justify-content-start">
+        <fa-icon [icon]="faBars" [styles]="{'color': '#6d5cb3', 'margin-left':'25px'}" ></fa-icon>
+        <h4 class="mb-0" [ngStyle]="{'margin-left': '8px'}">Hello Jhey</h4>
+      </div>
+      <div class="col-4">
+        <div class="input-search d-flex align-items-center justify-content-between">
+          <input type="text" class="form-control w-100" #searchInput>
+          <div class="label-search position-absolute">
+            <label>
+              <fa-icon [icon]="faSearch"  [styles]="{color:'#9fa1a3'}"></fa-icon>
+              Search here</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 d-flex align-items-center justify-content-evenly">
+        <div class="actions-header">
+          <button class="btn">
+            <fa-icon [icon]="faUpload" [styles]="{'color':'#fff'}" ></fa-icon>
+            New Upload
+          </button>
+          <ul>
+            <li>
+              <fa-icon [icon]="faBell" [styles]="{color:'#6d5cb3'}" ></fa-icon>
+            </li>
+            <li>
+              <fa-icon [icon]="faCommentDots" [styles]="{color:'#6d5cb3'}" ></fa-icon>              
+            </li>
+            <li>
+              <fa-icon [icon]="faChartLine" [styles]="{color:'#6d5cb3'}" ></fa-icon>
+            </li>
+          </ul>
+        </div>
+        <div class="profile d-flex align-items-center justify-content-evenly">
+          <div class="info text-end" style="color: #69696b;">
+            <b class="text-secondary">Jheyson Zurita</b>
+            <br>
+            <small>FullStack Dev.</small>
+          </div>
+          <div class="avatar">
+            <img src="https://st.depositphotos.com/2305339/3011/i/950/depositphotos_30116669-stock-photo-profile-of-young-man-with.jpg" alt="foto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
