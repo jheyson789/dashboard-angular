@@ -1,16 +1,18 @@
 <header class="header">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-2 d-flex align-items-center justify-content-evenly">
         <fa-icon [icon]="faBars" [styles]="{'color': '#6d5cb3'}" ></fa-icon>
         <h4 class="m-0">Hello Jhey</h4>
       </div>
       <div class="col-3">
-        <div class="input-search d-flex align-items-center justify-content-between ">
-          <label class="position-absolute">
-            <fa-icon [icon]="faSearch"  [styles]="{color:'#9fa1a3'}"></fa-icon>
-            Search here</label>
-          <input type="text" class="form-control w-100">
+        <div class="input-search d-flex align-items-center justify-content-between">
+          <input type="text" class="form-control w-100" #searchInput>
+          <div class="label-search position-absolute">
+            <label>
+              <fa-icon [icon]="faSearch"  [styles]="{color:'#9fa1a3'}"></fa-icon>
+              Search here</label>
+          </div>
         </div>
       </div>
       <div class="col-7 d-flex align-items-center justify-content-evenly">
