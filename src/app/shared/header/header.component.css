@@ -1,0 +1,61 @@
+.header {
+  padding: 10px;
+  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Input Search */
+.input-search label {
+  color: #9fa1a3;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.input-search input{
+  background-color: #eceff6;
+  outline: none;
+  border: none;
+}
+
+.input-search input:focus{
+  box-shadow: none;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+
+}
+
+ul li {
+  display: inline;
+  padding: 2px;
+  margin: 0px 5px;
+}
+
+li:last-child{
+  margin-right: 25px !important;
+}
+
+/* Actions buttons */
+.actions-header {
+  margin: 0 2px;
+}
+
+.actions-header button {
+  background-color: #ff5538;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Profile Info */
+.avatar {
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.avatar img {
+  border-radius: 10px;
+  width: 45px;
+  height: auto;
+}
