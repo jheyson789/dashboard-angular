@@ -1,29 +1,41 @@
 <header class="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-2">
-        <h4>Hello Jhey</h4>
+      <div class="col-2 d-flex align-items-center justify-content-evenly">
+        <fa-icon [icon]="faBars" [styles]="{'color': '#6d5cb3'}" ></fa-icon>
+        <h4 class="m-0">Hello Jhey</h4>
       </div>
       <div class="col-3">
         <div class="input-search d-flex align-items-center justify-content-between ">
-          <label class="position-absolute">Search here</label>
+          <label class="position-absolute">
+            <fa-icon [icon]="faSearch"  [styles]="{color:'#9fa1a3'}"></fa-icon>
+            Search here</label>
           <input type="text" class="form-control w-100">
         </div>
       </div>
       <div class="col-7 d-flex align-items-center justify-content-evenly">
         <div class="actions-header">
-          <button class="btn">New Upload</button>
+          <button class="btn">
+            <fa-icon [icon]="faUpload" [styles]="{'color':'#fff'}" ></fa-icon>
+            New Upload
+          </button>
           <ul>
-            <li>bell</li>
-            <li>msg</li>
-            <li>litics</li>
+            <li>
+              <fa-icon [icon]="faBell" [styles]="{color:'#6d5cb3'}" ></fa-icon>
+            </li>
+            <li>
+              <fa-icon [icon]="faCommentDots" [styles]="{color:'#6d5cb3'}" ></fa-icon>              
+            </li>
+            <li>
+              <fa-icon [icon]="faChartLine" [styles]="{color:'#6d5cb3'}" ></fa-icon>
+            </li>
           </ul>
         </div>
         <div class="profile d-flex align-items-center justify-content-evenly">
-          <div class="info text-end">
-            Jheyson Zurita
+          <div class="info text-end" style="color: #69696b;">
+            <b class="text-secondary">Jheyson Zurita</b>
             <br>
-            <small> <b class="text-secondary">FullStack Dev.</b> </small>
+            <small>FullStack Dev.</small>
           </div>
           <div class="avatar">
             <img src="https://st.depositphotos.com/2305339/3011/i/950/depositphotos_30116669-stock-photo-profile-of-young-man-with.jpg" alt="foto">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faBars, faUpload, faBell, faChartLine, faCommentDots, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  public faUpload = faUpload
+  public faBars = faBars
+  public faBell = faBell; 
+  public faChartLine =  faChartLine;
+  public faCommentDots =  faCommentDots
+  public faSearch = faSearch
 
   constructor() { }
 
