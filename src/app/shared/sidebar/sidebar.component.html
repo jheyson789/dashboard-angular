@@ -1,11 +1,30 @@
-<nav id="sidebar" [style.width.px]="320" class="animate__animated animate__fast" [ngClass]="{'animate__fadeInLeft': view, 'animate__fadeOutLeft': !view}" >
+<nav
+  id="sidebar"
+  [style.width.px]="320"
+  class="animate__animated animate__fast"
+  [ngClass]="{animate__fadeInLeft: view, animate__fadeOutLeft: !view}"
+>
   <div class="logo">
-    <img class="w-75" src="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg" alt="Logo Corporation.">
+    <img
+      class="w-100"
+      src="https://static1.es.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/5bd1e161419202b8ab974c21/1582743997338/squarespace-logo-horizontal-black.jpg"
+      alt="Logo Corporation."
+    />
   </div>
   <ul>
-    <li>Home</li>
-    <li>Users</li>
-    <li>Celphones</li>
-    <li>Cash</li>
+    <li
+      *ngFor="let item of itemsSide"
+      [routerLink]="'/' + item.route"
+      routerLinkActive="active-li"
+    >
+      <fa-icon [icon]="item.icon" [styles]="{'margin-left': '15px'}"></fa-icon>
+      <p class="m-0 text-start">
+        {{ item.title }}
+      </p>
+      <fa-icon
+        [icon]="faAngleRight"
+        [styles]="{'margin-right': '15px'}"
+      ></fa-icon>
+    </li>
   </ul>
 </nav>

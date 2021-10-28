@@ -2,6 +2,9 @@
   min-width: 320px;
   max-width: 75%;
   height: 100%;
+  top: auto;
+  bottom: 0;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -13,4 +16,28 @@
   #sidebar {
     max-width: 100%;
   }
+}
+
+ul {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ul li {
+  color: #a9adb5;
+  margin: 5px 0px;
+  padding: 12px 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-li {
+  color: #fff !important;
+  background-color: #6d5cb3;
+}
+
+ul li:hover:not(.active-li) {
+  cursor: pointer;
+  background-color: #dfd7ff5d;
 }
