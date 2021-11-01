@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeRoutingModule } from './home/home-routing.module';
-
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {HomeRoutingModule} from './home/home-routing.module';
+// TODO aca viene el lazy loading de todos los routing
 const routes: Routes = [
   {
     path: '',
@@ -13,6 +13,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), HomeRoutingModule],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
