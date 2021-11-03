@@ -15,7 +15,7 @@ type itemsSideBar = {
 export const itemsSide: itemsSideBar[] = [
   {
     title: 'Dashboard',
-    route: 'home',
+    route: 'home/dashboard',
     icon: faHome,
   },
   {
