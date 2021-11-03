@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let status of statusData">
+    <div class="card">
+      <h5 class="card-title">{{ status.title }}</h5>
+      <div
+        class="card-body d-flex align-content-center justify-content-between"
+        [style.font-size.px]="24"
+      >
+        <p>{{ status.amount }}</p>
+        <div class="img">
+          <img [src]="status.image" [alt]="status.title" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
