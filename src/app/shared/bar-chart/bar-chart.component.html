@@ -1,0 +1,13 @@
+<h4 class="title-chart">{{ title }}</h4>
+<div class="chartjs-container" style="height: 100%">
+  <canvas
+    baseChart
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType"
+  >
+  </canvas>
+</div>

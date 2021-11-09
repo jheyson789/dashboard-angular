@@ -1,0 +1,13 @@
+.row {
+  padding: 20px 15px;
+}
+
+.row:first-child {
+  padding: 0;
+}
+
+.card {
+  border: none;
+  padding: 17px;
+  border-radius: 12px;
+}

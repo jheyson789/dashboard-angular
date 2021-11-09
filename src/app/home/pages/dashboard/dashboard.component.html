@@ -1,7 +1,16 @@
 <div class="container-fluid p-5">
-  <div class="status-view">
+  <div class="row status-view">
     <!-- <div class="col-md-3"> -->
     <app-status-view></app-status-view>
     <!-- </div> -->
+  </div>
+
+  <div class="row justify-content-between">
+    <div class="col-md-8 card">
+      <app-line-chart [title]="'Revenue'"></app-line-chart>
+    </div>
+    <div class="col-md-3 card">
+      <app-bar-chart [title]="'Visitors'"></app-bar-chart>
+    </div>
   </div>
 </div>
